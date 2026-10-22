@@ -53,7 +53,7 @@ jobs:
         if: steps.version.outputs.changed == 'true' && steps.published.outputs.already_published == 'false'
         uses: actions/setup-node@v4
         with:
-          node-version: '24'
+          node-version: '24.22.1'
           registry-url: 'https://registry.npmjs.org'
 
       - name: Install dependencies
